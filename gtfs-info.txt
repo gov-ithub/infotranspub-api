@@ -1,0 +1,3 @@
+Idee de schema pentru baza de date (atentie la tipurile _id)
+https://developers.google.com/transit/images/gtfs-feed-diagram.png
+
