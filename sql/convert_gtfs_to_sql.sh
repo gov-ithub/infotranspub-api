@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -u
+set -ue
 
 # Usage: ./convert_gtfs_to_sql.sh "$HOME/Projects/Me/GovITHub/ratbv-to-gtfs-converter/old_data/brasov/"
 

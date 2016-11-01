@@ -1,0 +1,2 @@
+set schema :SCHEMA_NAME;
+\i :SQL_FILEPATH
