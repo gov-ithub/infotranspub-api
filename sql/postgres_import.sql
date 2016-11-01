@@ -1,2 +1,4 @@
-set schema :SCHEMA_NAME;
+CREATE SCHEMA IF NOT EXISTS :SCHEMA_NAME AUTHORIZATION postgres;
+SET search_path TO :SCHEMA_NAME, public;
+SHOW search_path;
 \i :SQL_FILEPATH

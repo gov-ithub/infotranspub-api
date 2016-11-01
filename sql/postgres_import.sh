@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-# Usage: ./postgres_import.sh brasov_gtfs out_postgres.sql
+# Usage: ./postgres_import.sh gtfs_brasov out_postgres.sql
 
 set -ue
 
 SCHEMA_NAME="$1"
 SQL_FILEPATH="$2"
 
-psql -U postgres -d public_transport -f postgres_import.sql \
+psql -X -h localhost -U postgres -d public_transport -f "postgres_import.sql" \
     --set SCHEMA_NAME="$SCHEMA_NAME" \
     --set SQL_FILEPATH="$SQL_FILEPATH"
 psql_exit_status=$?
