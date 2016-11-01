@@ -1,0 +1,3 @@
+[submodule "sql/gtfs_to_sql_converter"]
+	path = sql/gtfs_to_sql_converter
+	url = git@github.com:mnemonicflow/gtfs_SQL_importer.git
